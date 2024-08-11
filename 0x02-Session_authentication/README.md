@@ -1,15 +1,15 @@
 Background Context
 In this project, you will implement a Session Authentication. You are not allowed to install any other module.
 
-In the industry, you should not implement your own Session authentication system and use a module or framework that doing it for you (like in Python-Flask: Flask-HTTPAuth). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
+In the industry, you should not implement your own Session authentication system and use a module or framework that doing it for you (like in Python-Flask: [Flask-HTTPAuth](https://flask-httpauth.readthedocs.io/en/latest/)). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
 
 Resources
 Read or watch:
 
-REST API Authentication Mechanisms - Only the session auth part
-HTTP Cookie
-Flask
-Flask Cookie
+[REST API Authentication Mechanisms](https://www.youtube.com/watch?v=501dpx2IjGY) - Only the session auth part
+[HTTP Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cookie)
+[Flask](https://palletsprojects.com/p/flask/)
+[Flask Cookie](https://flask.palletsprojects.com/en/1.1.x/quickstart/#cookies)
 Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
@@ -709,7 +709,7 @@ Return None if session_id is None
 Return None if user_id_by_session_id doesn’t contain any key equals to session_id
 Return the user_id key from the session dictionary if self.session_duration is equal or under 0
 Return None if session dictionary doesn’t contain a key created_at
-Return None if the created_at + session_duration seconds are before the current datetime. datetime - timedelta
+Return None if the created_at + session_duration seconds are before the current datetime. [datetime - timedelta](https://docs.python.org/3.5/library/datetime.html#timedelta-objects)
 Otherwise, return user_id from the session dictionary
 Update api/v1/app.py to instantiate auth with SessionExpAuth if the environment variable AUTH_TYPE is equal to session_exp_auth.
 
