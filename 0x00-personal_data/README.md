@@ -1,10 +1,10 @@
 Resources
 Read or watch:
 
-What Is PII, non-PII, and Personal Data?
-logging documentation
-bcrypt package
-Logging to Files, Setting Levels, and Formatting
+[What Is PII, non-PII, and Personal Data?](https://piwik.pro/blog/what-is-pii-personal-data/)
+[logging documentation](https://docs.python.org/3/library/logging.html)
+[bcrypt package](https://github.com/pyca/bcrypt/)
+[Logging to Files, Setting Levels, and Formatting](https://www.youtube.com/watch?v=-ARI4Cz-awo)
 Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
@@ -116,7 +116,7 @@ File: filtered_logger.py
   
 2. Create logger
 mandatory
-Use user_data.csv for this task
+Use [user_data.csv](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2019/11/a2e00974ce6b41460425.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240811%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240811T150955Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=767756a7c754ed2172a719d15f552679616bc62ed021676279431560d49a147b) for this task
 
 Implement a get_logger function that takes no arguments and returns a logging.Logger object.
 
@@ -127,7 +127,7 @@ Create a tuple PII_FIELDS constant at the root of the module containing the fiel
 Tips:
 
 What Is PII, non-PII, and personal data?
-Uncovering Password Habits
+[Uncovering Password Habits](https://www.digitalguardian.com/blog/uncovering-password-habits-are-users%E2%80%99-password-security-habits-improving-infographic)
 bob@dylan:~$ cat main.py
 #!/usr/bin/env python3
 """
