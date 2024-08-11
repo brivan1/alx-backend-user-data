@@ -1,17 +1,17 @@
 In this project, you will learn what the authentication process means and implement a Basic Authentication on a simple API.
 
-In the industry, you should not implement your own Basic authentication system and use a module or framework that doing it for you (like in Python-Flask: Flask-HTTPAuth). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
+In the industry, you should not implement your own Basic authentication system and use a module or framework that doing it for you (like in Python-Flask: [Flask-HTTPAuth](https://flask-httpauth.readthedocs.io/en/latest/)). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
 
 
 
 Resources
 Read or watch:
 
-REST API Authentication Mechanisms
-Base64 in Python
-HTTP header Authorization
-Flask
-Base64 - concept
+[REST API Authentication Mechanisms](https://www.youtube.com/watch?v=501dpx2IjGY)
+[Base64 in Python](https://docs.python.org/3.7/library/base64.html)
+[HTTP header Authorization](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization)
+[Flask](https://palletsprojects.com/p/flask/)
+[Base64 - concept](https://en.wikipedia.org/wiki/Base64)
 Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
@@ -37,7 +37,7 @@ A documentation is not a simple word, it’s a real sentence explaining what’s
 Tasks
 0. Simple-basic-API
 mandatory
-Download and start your project from this archive.zip
+Download and start your project from this [archive.zip]()
 
 In this archive, you will find a simple API with one model: User. Storage of these users is done via a serialization/deserialization in files.
 
@@ -88,7 +88,7 @@ you must use jsonify from Flask
 For testing this new error handler, add a new endpoint in api/v1/views/index.py:
 
 Route: GET /api/v1/unauthorized
-This endpoint must raise a 401 error by using abort - Custom Error Pages
+This endpoint must raise a 401 error by using abort - [Custom Error Pages](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/)
 By calling abort(401), the error handler for 401 will be executed.
 
 In the first terminal:
@@ -281,7 +281,7 @@ Based on the environment variable AUTH_TYPE, load and assign the right instance 
 if auth:
 import Auth from api.v1.auth.auth
 create an instance of Auth and assign it to the variable auth
-Now the biggest piece is the filtering of each request. For that you will use the Flask method before_request
+Now the biggest piece is the filtering of each request. For that you will use the Flask method [before_request](https://flask.palletsprojects.com/en/1.1.x/api/#flask.Blueprint.before_request)
 
 Add a method in api/v1/app.py to handler before_request
 if auth is None, do nothing
