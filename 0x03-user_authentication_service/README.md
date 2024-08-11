@@ -1,11 +1,11 @@
-In the industry, you should not implement your own authentication system and use a module or framework that doing it for you (like in Python-Flask: Flask-User). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
+In the industry, you should not implement your own authentication system and use a module or framework that doing it for you (like in Python-Flask: [Flask-User](https://flask-user.readthedocs.io/en/latest/)). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
 
 Resources
 Read or watch:
 
-Flask documentation
-Requests module
-HTTP status codes
+[Flask documentation](https://flask.palletsprojects.com/en/1.1.x/quickstart/)
+[Requests module](https://requests.kennethreitz.org/en/latest/user/quickstart/)
+[HTTP status codes](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
 Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
@@ -37,7 +37,7 @@ pip3 install bcrypt
 Tasks
 0. User model
 mandatory
-In this task you will create a SQLAlchemy model named User for a database table named users (by using the mapping declaration of SQLAlchemy).
+In this task you will create a SQLAlchemy model named User for a database table named users (by using the [mapping declaration](https://docs.sqlalchemy.org/en/13/orm/tutorial.html#declare-a-mapping) of SQLAlchemy).
 
 The model will have the following attributes:
 
